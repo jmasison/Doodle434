@@ -149,16 +149,7 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-        if(id == R.id.undo){
-            final DoodleView doodleView = (DoodleView) findViewById(R.id.doodle_view);
-            doodleView.undo();
-            return true;
-        }
-        if (id == R.id.redo){
-            final DoodleView doodleView = (DoodleView) findViewById(R.id.doodle_view);
-            doodleView.redo();
-            return true;
-        }
+
         if (id == R.id.save) {
             doodleView.setDrawingCacheEnabled(true);
             Bitmap bitmap = doodleView.getDrawingCache();
